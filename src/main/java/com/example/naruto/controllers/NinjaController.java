@@ -25,8 +25,6 @@ public class NinjaController {
         return ninjaList ;
     }
 
-    @PostMapping
-    public Ninja
 
 
 }
