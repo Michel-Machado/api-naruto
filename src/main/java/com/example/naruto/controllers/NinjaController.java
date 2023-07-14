@@ -1,14 +1,12 @@
 package com.example.naruto.controllers;
 
 import com.example.naruto.entities.Ninja;
-import com.example.naruto.entities.Vila;
 import com.example.naruto.repositories.NinjaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -20,8 +18,12 @@ public class NinjaController {
 
     @GetMapping
     public List<Ninja> getNinja(){
-        List<Ninja> ninjaList = ninjaRepository.findAll();
-        return ninjaList ;
+        return ninjaRepository.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public Optional<Ninja> FindById(@PathVariable Long id) {
+        return ninjaRepository.findById(id);
     }
 
     @PostMapping
@@ -29,5 +31,7 @@ public class NinjaController {
         return ninjaRepository.save(ninja);
 
     }
+
+
 
 }
