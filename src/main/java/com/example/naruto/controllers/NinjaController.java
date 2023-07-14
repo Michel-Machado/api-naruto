@@ -17,14 +17,17 @@ public class NinjaController {
 
     @Autowired
     private NinjaRepository ninjaRepository;
+
     @GetMapping
     public List<Ninja> getNinja(){
-
-
         List<Ninja> ninjaList = ninjaRepository.findAll();
         return ninjaList ;
     }
 
+    @PostMapping
+    public Ninja criaNinja(@RequestBody Ninja ninja){
+        return ninjaRepository.save(ninja);
 
+    }
 
 }
