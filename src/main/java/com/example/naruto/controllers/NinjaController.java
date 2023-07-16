@@ -3,6 +3,7 @@ package com.example.naruto.controllers;
 import com.example.naruto.entities.Ninja;
 import com.example.naruto.repositories.NinjaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,6 +33,14 @@ public class NinjaController {
 
     }
 
+    @PutMapping
+    public Ninja atualizaNinja(@RequestBody Ninja ninja){
+        return ninjaRepository.save(ninja);
+    }
 
+    @DeleteMapping("/{id}")
+    public void deleteNinja(@PathVariable Long id) {
+        ninjaRepository.deleteById(id);
+    }
 
 }
