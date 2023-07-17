@@ -9,11 +9,120 @@
          ],
          "method" : "GET",
          "params" : [
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            }
+         ],
+         "path" : "/ninjas/2",
+         "result" : "null",
+         "time" : 9
+      },
+      {
+         "contentType" : "application/x-www-form-urlencoded",
+         "desc" : "",
+         "headers" : [
             
+         ],
+         "method" : "GET",
+         "params" : [
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            }
+         ],
+         "path" : "/ninjas/3",
+         "result" : "{\"id\":3,\"name\":\"Ame\",\"taijutsu\":69,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}}",
+         "time" : 348
+      },
+      {
+         "contentType" : "application/x-www-form-urlencoded",
+         "desc" : "",
+         "headers" : [
+            
+         ],
+         "method" : "GET",
+         "params" : [
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            },
+            {
+               "desc" : "",
+               "enable" : true,
+               "key" : "",
+               "type" : "string",
+               "value" : ""
+            }
          ],
          "path" : "/ninjas",
          "result" : "[{\"id\":1,\"name\":\"Akamaru\",\"taijutsu\":83,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":2,\"name\":\"Akita Inuzuka\",\"taijutsu\":12,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":3,\"name\":\"Ame\",\"taijutsu\":69,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":4,\"name\":\"Ami\",\"taijutsu\":84,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":5,\"name\":\"Aniki (Gângster)\",\"taijutsu\":82,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":6,\"name\":\"Aoba Yamashiro\",\"taijutsu\":50,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":7,\"name\":\"Aoi Rokushō\",\"taijutsu\":96,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":8,\"name\":\"Assistente do Escultor de Pedra\",\"taijutsu\":27,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":9,\"name\":\"Astrônoma de Konoha\",\"taijutsu\":58,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":10,\"name\":\"Asuma Sarutobi\",\"taijutsu\":95,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":11,\"name\":\"Baku\",\"taijutsu\":28,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":12,\"name\":\"Baku (Anbu)\",\"taijutsu\":63,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":13,\"name\":\"Biwako Sarutobi\",\"taijutsu\":74,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":14,\"name\":\"Boruto Uzumaki\",\"taijutsu\":29,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":15,\"name\":\"Chen\",\"taijutsu\":19,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":16,\"name\":\"Chōbee Akimichi\",\"taijutsu\":30,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":17,\"name\":\"Corvo de Itachi\",\"taijutsu\":59,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":18,\"name\":\"Daikoku Funeno\",\"taijutsu\":29,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":19,\"name\":\"Dajimu\",\"taijutsu\":69,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":20,\"name\":\"Dan Katō\",\"taijutsu\":66,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":21,\"name\":\"Dançarina dos Ventos\",\"taijutsu\":77,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":22,\"name\":\"Daruma Izuno\",\"taijutsu\":74,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":23,\"name\":\"Dokan\",\"taijutsu\":27,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":24,\"name\":\"Dōtō Akimichi\",\"taijutsu\":70,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":25,\"name\":\"Ebisu\",\"taijutsu\":98,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":26,\"name\":\"Eiki Fūma\",\"taijutsu\":46,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":27,\"name\":\"Enra\",\"taijutsu\":30,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":28,\"name\":\"Ensui Nara\",\"taijutsu\":60,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":29,\"name\":\"Escultor de Pedra\",\"taijutsu\":80,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":30,\"name\":\"Esposa de Kisuke\",\"taijutsu\":35,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":31,\"name\":\"Fuki\",\"taijutsu\":17,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":32,\"name\":\"Futaba\",\"taijutsu\":14,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":33,\"name\":\"Fū Yamanaka\",\"taijutsu\":79,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":34,\"name\":\"Gamaken\",\"taijutsu\":84,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":35,\"name\":\"Gamamaru\",\"taijutsu\":48,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":36,\"name\":\"Gamariki\",\"taijutsu\":99,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":37,\"name\":\"Gamatatsu\",\"taijutsu\":21,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":38,\"name\":\"Garaga\",\"taijutsu\":89,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":39,\"name\":\"Gazeru\",\"taijutsu\":66,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":40,\"name\":\"Gyokurō Chabashira\",\"taijutsu\":53,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":41,\"name\":\"Haguruma\",\"taijutsu\":19,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":42,\"name\":\"Hajiki\",\"taijutsu\":72,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":43,\"name\":\"Hako Kuroi\",\"taijutsu\":47,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":44,\"name\":\"Hakui\",\"taijutsu\":94,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":45,\"name\":\"Hakui (Médico)\",\"taijutsu\":47,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":46,\"name\":\"Harika Aburame\",\"taijutsu\":59,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":47,\"name\":\"Hayate Gekkō\",\"taijutsu\":56,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":48,\"name\":\"Hazuki Uchiha\",\"taijutsu\":100,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":49,\"name\":\"Hiashi Hyūga\",\"taijutsu\":56,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":50,\"name\":\"Hibari\",\"taijutsu\":11,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":51,\"name\":\"Hibari Kamakura\",\"taijutsu\":64,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":52,\"name\":\"Himawari Uzumaki\",\"taijutsu\":37,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":53,\"name\":\"Hinata Hyūga (Mundo Genjutsu)\",\"taijutsu\":71,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":54,\"name\":\"Hinoe\",\"taijutsu\":57,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":55,\"name\":\"Hiruko (nukenin)\",\"taijutsu\":91,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":56,\"name\":\"Hiruzen Sarutobi\",\"taijutsu\":68,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":57,\"name\":\"Hizashi Hyūga\",\"taijutsu\":66,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":58,\"name\":\"Hotaru (estudante)\",\"taijutsu\":95,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":59,\"name\":\"Hōsei\",\"taijutsu\":48,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":60,\"name\":\"Hōshō\",\"taijutsu\":47,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":61,\"name\":\"Ibara\",\"taijutsu\":90,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":62,\"name\":\"Idate Morino\",\"taijutsu\":33,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":63,\"name\":\"Ikkaku Umino\",\"taijutsu\":79,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":64,\"name\":\"Inabi Uchiha\",\"taijutsu\":89,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":65,\"name\":\"Inaho\",\"taijutsu\":49,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":66,\"name\":\"Inojin Yamanaka\",\"taijutsu\":27,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":67,\"name\":\"Iroha Hyūga\",\"taijutsu\":90,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":68,\"name\":\"Iwabee Yuino\",\"taijutsu\":99,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":69,\"name\":\"Iwana Akame\",\"taijutsu\":28,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":70,\"name\":\"Iwashi Tatami\",\"taijutsu\":36,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":71,\"name\":\"Iō\",\"taijutsu\":54,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":72,\"name\":\"Iō (Ninja Médico)\",\"taijutsu\":42,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":73,\"name\":\"Jimei\",\"taijutsu\":28,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":74,\"name\":\"Jin\",\"taijutsu\":84,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":75,\"name\":\"Jiraiya\",\"taijutsu\":81,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":76,\"name\":\"Jirō\",\"taijutsu\":21,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":77,\"name\":\"Kabuto Yakushi\",\"taijutsu\":67,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":78,\"name\":\"Kaede\",\"taijutsu\":89,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":79,\"name\":\"Kage (Anbu)\",\"taijutsu\":71,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":80,\"name\":\"Kagen Uchiha\",\"taijutsu\":63,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":81,\"name\":\"Kakoi\",\"taijutsu\":71,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":82,\"name\":\"Kande Inabikari\",\"taijutsu\":15,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":83,\"name\":\"Kanoe\",\"taijutsu\":50,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":84,\"name\":\"Kanoto\",\"taijutsu\":72,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":85,\"name\":\"Kanpō\",\"taijutsu\":11,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":86,\"name\":\"Kasumi\",\"taijutsu\":48,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":87,\"name\":\"Katasuke Tōno\",\"taijutsu\":54,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":88,\"name\":\"Keiri\",\"taijutsu\":72,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":89,\"name\":\"Kido Tsumiki\",\"taijutsu\":34,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":90,\"name\":\"Kinoto\",\"taijutsu\":86,\"vilage\":{\"id\":1,\"name\":\"konohagakure\"}},{\"id\":91,\"name\":\"Baiu\",\"taijutsu\":77,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":92,\"name\":\"Camaleão Gigante\",\"taijutsu\":17,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":93,\"name\":\"Fusō\",\"taijutsu\":88,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":94,\"name\":\"Fuyō\",\"taijutsu\":80,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":95,\"name\":\"Heiji\",\"taijutsu\":46,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":96,\"name\":\"Kie\",\"taijutsu\":26,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":97,\"name\":\"Mubi\",\"taijutsu\":93,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":98,\"name\":\"Nagato\",\"taijutsu\":52,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":99,\"name\":\"Quimera Gigante\",\"taijutsu\":37,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":100,\"name\":\"Ryūsui\",\"taijutsu\":97,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":101,\"name\":\"Ugatsu\",\"taijutsu\":76,\"vilage\":{\"id\":2,\"name\":\"Amegakure\"}},{\"id\":102,\"name\":\"Akatsuchi\",\"taijutsu\":25,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":103,\"name\":\"Akkun\",\"taijutsu\":68,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":104,\"name\":\"Gari\",\"taijutsu\":61,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":105,\"name\":\"Han\",\"taijutsu\":74,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":106,\"name\":\"Ittan\",\"taijutsu\":42,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":107,\"name\":\"Iwazo\",\"taijutsu\":54,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":108,\"name\":\"Kirara\",\"taijutsu\":64,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":109,\"name\":\"Kokuō\",\"taijutsu\":85,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":110,\"name\":\"Kozuchi\",\"taijutsu\":89,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":111,\"name\":\"Kurobachi\",\"taijutsu\":27,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":112,\"name\":\"Mahiru\",\"taijutsu\":15,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":113,\"name\":\"Monga\",\"taijutsu\":74,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":114,\"name\":\"Morio\",\"taijutsu\":92,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":115,\"name\":\"Mū\",\"taijutsu\":32,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":116,\"name\":\"Sekiei\",\"taijutsu\":30,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":117,\"name\":\"Sekki\",\"taijutsu\":97,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":118,\"name\":\"Son Gokū\",\"taijutsu\":23,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":119,\"name\":\"Suzumebachi\",\"taijutsu\":17,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":120,\"name\":\"Taiseki\",\"taijutsu\":23,\"vilage\":{\"id\":3,\"name\":\"Iwagakure\"}},{\"id\":121,\"name\":\"Byakuren\",\"taijutsu\":66,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":122,\"name\":\"Chino\",\"taijutsu\":35,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":123,\"name\":\"Chōjūrō\",\"taijutsu\":42,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":124,\"name\":\"Chūkichi\",\"taijutsu\":37,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":125,\"name\":\"Gonbee\",\"taijutsu\":63,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":126,\"name\":\"Haku\",\"taijutsu\":42,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":127,\"name\":\"Hassaku Onomichi\",\"taijutsu\":76,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":128,\"name\":\"Jūzō Biwa\",\"taijutsu\":44,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":129,\"name\":\"Kagura Karatachi\",\"taijutsu\":82,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":130,\"name\":\"Karyū\",\"taijutsu\":64,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":131,\"name\":\"Kiruru\",\"taijutsu\":36,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":132,\"name\":\"Kisame Hoshigaki\",\"taijutsu\":47,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":133,\"name\":\"Kosuke\",\"taijutsu\":92,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":134,\"name\":\"Kushimaru Kuriarare\",\"taijutsu\":65,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":135,\"name\":\"Kyohō Fuefuki\",\"taijutsu\":33,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":136,\"name\":\"Mangetsu Hōzuki\",\"taijutsu\":89,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":137,\"name\":\"Marisco Gigante\",\"taijutsu\":25,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":138,\"name\":\"Mei Terumī\",\"taijutsu\":100,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":139,\"name\":\"Meizu\",\"taijutsu\":74,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":140,\"name\":\"Miru\",\"taijutsu\":86,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":141,\"name\":\"Misuno\",\"taijutsu\":14,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":142,\"name\":\"Mukai Kohinata\",\"taijutsu\":37,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":143,\"name\":\"Obito Uchiha\",\"taijutsu\":26,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":144,\"name\":\"Raiga Kurosuki\",\"taijutsu\":49,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":145,\"name\":\"Saiken\",\"taijutsu\":94,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":146,\"name\":\"Suigetsu Hōzuki\",\"taijutsu\":83,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":147,\"name\":\"Suiren (Kiri)\",\"taijutsu\":35,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":148,\"name\":\"Tenzen\",\"taijutsu\":17,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":149,\"name\":\"Terceiro Mizukage\",\"taijutsu\":60,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":150,\"name\":\"Tetsu\",\"taijutsu\":46,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":151,\"name\":\"Tsurugi\",\"taijutsu\":24,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":152,\"name\":\"Utakata\",\"taijutsu\":31,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}},{\"id\":153,\"name\":\"Zabuza Momochi\",\"taijutsu\":88,\"vilage\":{\"id\":4,\"name\":\"Kirigakure\"}}]",
-         "time" : 365
+         "time" : 131
       }
    ]
 }
