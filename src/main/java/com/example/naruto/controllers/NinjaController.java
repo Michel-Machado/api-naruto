@@ -1,5 +1,6 @@
 package com.example.naruto.controllers;
 
+import com.example.naruto.core.NinjaCore;
 import com.example.naruto.entities.Ninja;
 import com.example.naruto.repositories.NinjaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,9 @@ public class NinjaController {
     @Autowired
     private NinjaRepository ninjaRepository;
 
+    @Autowired
+    private NinjaCore ninjaCore;
+
     @GetMapping
     public List<Ninja> getNinja(){
         return ninjaRepository.findAll();
@@ -27,9 +31,10 @@ public class NinjaController {
         return ninjaRepository.findById(id);
     }
 
+
     @PostMapping
-    public Ninja criaNinja(@RequestBody Ninja ninja){
-        return ninjaRepository.save(ninja);
+    public ResponseEntity<?> cadastroNinja(@RequestBody Ninja ninja){
+        return ninjaCore.cadastrar(ninja);
 
     }
 
