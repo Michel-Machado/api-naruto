@@ -13,7 +13,7 @@ public class NinjaCore {
     @Autowired
     private NinjaRepository ninjaRepository;
 
-    public ResponseEntity<?> cadastrar(Ninja ninja) {
+    public ResponseEntity<?> CreateNinja(Ninja ninja) {
         if (ninja.getName().equals("")) {
             return new ResponseEntity<>("Campo: 'nome' deve ser preenchido", HttpStatus.BAD_REQUEST);
         } else if ((ninja.getQuantidadeDeChacra() < 0) || (ninja.getQuantidadeDeChacra() > 100)) {
@@ -23,11 +23,11 @@ public class NinjaCore {
         }
     }
 
-    public ResponseEntity<?> buscaTodosNinjas(){
+    public ResponseEntity<?> getAllNinjas(){
         return new ResponseEntity<>(ninjaRepository.findAll(), HttpStatus.OK);
     }
 
-    public ResponseEntity<?> buscaNinjaById(Long id){
+    public ResponseEntity<?> getNinjaById(Long id){
         if(ninjaRepository.countById(id) == 0){
           return new ResponseEntity<>(" Ninja não Encontrado", HttpStatus.BAD_REQUEST);
         }else {
@@ -36,7 +36,7 @@ public class NinjaCore {
 
     }
 
-    public ResponseEntity<?> editaNinja(Ninja ninja){
+    public ResponseEntity<?> editNinja(Ninja ninja){
         if(ninja.getId()==0){
             return new ResponseEntity<>("Id não encontrado",HttpStatus.NOT_FOUND);
         } else if (ninja.getName().equals("")) {
@@ -48,7 +48,18 @@ public class NinjaCore {
         }else {
             return new ResponseEntity<>(ninjaRepository.save(ninja), HttpStatus.OK);
         }
-
     }
+
+    public ResponseEntity<?> deleteNinja(Long id){
+        if(ninjaRepository.countById(id) == 0){
+            return new ResponseEntity<>("Id não encontrado", HttpStatus.NOT_FOUND);
+        }else {
+            ninjaRepository.deleteById(id);
+            return new ResponseEntity<>("Ninja Removido", HttpStatus.OK);
+        }
+    }
+
+
+
 }
 

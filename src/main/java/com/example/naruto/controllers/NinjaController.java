@@ -7,9 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Optional;
-
 
 @RestController
 @RequestMapping("/ninjas")
@@ -21,30 +18,31 @@ public class NinjaController {
     private NinjaCore ninjaCore;
 
     @GetMapping
-    public ResponseEntity<?> getNinja(){
-        return ninjaCore.buscaTodosNinjas();
+    public ResponseEntity<?> buscaNinjas(){
+        return ninjaCore.getAllNinjas();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> FindById(@PathVariable Long id) {
+    public ResponseEntity<?> buscaNinjaPorId(@PathVariable Long id) {
 
-        return ninjaCore.buscaNinjaById(id);
+        return ninjaCore.getNinjaById(id);
     }
 
     @PostMapping
-    public ResponseEntity<?> cadastroNinja(@RequestBody Ninja ninja){
-        return ninjaCore.cadastrar(ninja);
+    public ResponseEntity<?> cadastraNinja(@RequestBody Ninja ninja){
+        return ninjaCore.CreateNinja(ninja);
 
     }
 
     @PutMapping
     public ResponseEntity<?> atualizaNinja(@RequestBody Ninja ninja){
-        return ninjaCore.editaNinja(ninja);
+        return ninjaCore.editNinja(ninja);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteNinja(@PathVariable Long id) {
-        ninjaRepository.deleteById(id);
+    public ResponseEntity<?> excluiNinja(@PathVariable Long id) {
+
+        return ninjaCore.deleteNinja(id);
     }
 
 }
