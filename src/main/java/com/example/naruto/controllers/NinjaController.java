@@ -38,8 +38,8 @@ public class NinjaController {
     }
 
     @PutMapping
-    public Ninja atualizaNinja(@RequestBody Ninja ninja){
-        return ninjaRepository.save(ninja);
+    public ResponseEntity<?> atualizaNinja(@RequestBody Ninja ninja){
+        return ninjaCore.editaNinja(ninja);
     }
 
     @DeleteMapping("/{id}")

@@ -1,5 +1,6 @@
 package com.example.naruto;
 
+import com.example.naruto.entities.Ninja;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,4 +11,6 @@ public class NarutoApplication {
 		SpringApplication.run(NarutoApplication.class, args);
 	}
 
+
 }
+

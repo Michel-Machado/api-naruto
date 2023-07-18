@@ -10,7 +10,7 @@ public class Ninja {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Integer taijutsu;
+    private Integer quantidadeDeChacra;
 
     @ManyToOne
     @JoinColumn(name = "vila_id")
@@ -19,10 +19,10 @@ public class Ninja {
     public Ninja() {
     }
 
-    public Ninja(Long id, String name, Integer taijutsu, Vila vilage) {
+    public Ninja(Long id, String name, Integer quantidadeDeChacra, Vila vilage) {
         this.id = id;
         this.name = name;
-        this.taijutsu = taijutsu;
+        this.quantidadeDeChacra = quantidadeDeChacra;
         this.vilage = vilage;
     }
 
@@ -44,12 +44,12 @@ public class Ninja {
         return this;
     }
 
-    public Integer getTaijutsu() {
-        return taijutsu;
+    public Integer getQuantidadeDeChacra() {
+        return quantidadeDeChacra;
     }
 
-    public Ninja setTaijutsu(Integer taijutsu) {
-        this.taijutsu = taijutsu;
+    public Ninja setQuantidadeDeChacra(Integer quantidadeDeChacra) {
+        this.quantidadeDeChacra = quantidadeDeChacra;
         return this;
     }
 
