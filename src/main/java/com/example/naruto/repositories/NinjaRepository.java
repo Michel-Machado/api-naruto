@@ -12,4 +12,6 @@ public interface NinjaRepository extends JpaRepository<Ninja, Long> {
 
    Optional<Ninja> findById(Long id);
 
+   int countById(Long id);
+
 }

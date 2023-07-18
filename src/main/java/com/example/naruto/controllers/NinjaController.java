@@ -17,20 +17,19 @@ public class NinjaController {
 
     @Autowired
     private NinjaRepository ninjaRepository;
-
     @Autowired
     private NinjaCore ninjaCore;
 
     @GetMapping
-    public List<Ninja> getNinja(){
-        return ninjaRepository.findAll();
+    public ResponseEntity<?> getNinja(){
+        return ninjaCore.buscaTodosNinjas();
     }
 
     @GetMapping("/{id}")
-    public Optional<Ninja> FindById(@PathVariable Long id) {
-        return ninjaRepository.findById(id);
-    }
+    public ResponseEntity<?> FindById(@PathVariable Long id) {
 
+        return ninjaCore.buscaNinjaById(id);
+    }
 
     @PostMapping
     public ResponseEntity<?> cadastroNinja(@RequestBody Ninja ninja){

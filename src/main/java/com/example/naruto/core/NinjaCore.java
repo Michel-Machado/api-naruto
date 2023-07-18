@@ -23,5 +23,18 @@ public class NinjaCore {
             return new ResponseEntity<>(ninjaRepository.save(ninja), HttpStatus.CREATED);
         }
     }
+
+    public ResponseEntity<?> buscaTodosNinjas(){
+        return new ResponseEntity<>(ninjaRepository.findAll(), HttpStatus.OK);
+    }
+
+    public ResponseEntity<?> buscaNinjaById(Long id){
+        if(ninjaRepository.countById(id) == 0){
+          return new ResponseEntity<>(" Ninja não Encontrado", HttpStatus.BAD_REQUEST);
+        }else {
+            return new ResponseEntity<>(ninjaRepository.findById(id), HttpStatus.OK);
+        }
+
+    }
 }
 
