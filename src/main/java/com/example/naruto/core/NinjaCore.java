@@ -1,25 +1,33 @@
 package com.example.naruto.core;
 
-import com.example.naruto.entities.Ninja;
+import com.example.naruto.Dto.NinjaDto;
+import com.example.naruto.adapters.NinjaPortIn;
+import com.example.naruto.entities.NinjaEntity;
 import com.example.naruto.repositories.NinjaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 @Service
-public class NinjaCore {
+public class NinjaCore implements NinjaPortIn {
 
     @Autowired
     private NinjaRepository ninjaRepository;
 
-    public ResponseEntity<?> CreateNinja(Ninja ninja) {
-        if (ninja.getName().equals("")) {
+
+
+    public ResponseEntity<?> createNinja(NinjaDto ninjaDto) {
+        if (!StringUtils.hasText(ninjaDto.getName())) {
             return new ResponseEntity<>("Campo: 'nome' deve ser preenchido", HttpStatus.BAD_REQUEST);
-        } else if ((ninja.getQuantidadeDeChacra() < 0) || (ninja.getQuantidadeDeChacra() > 100)) {
+        } else if ((ninjaDto.getQuantidadeDeChacra() < 0) || (ninjaDto.getQuantidadeDeChacra() > 100)) {
             return new ResponseEntity<>("Valor inválido", HttpStatus.BAD_REQUEST);
         } else {
-            return new ResponseEntity<>(ninjaRepository.save(ninja), HttpStatus.CREATED);
+            NinjaEntity ninjaEntity = new NinjaEntity(null,ninjaDto.getName(),
+                    ninjaDto.getQuantidadeDeChacra(), ninjaDto.getVilage());
+
+            return new ResponseEntity<>(ninjaRepository.save(ninjaEntity), HttpStatus.CREATED);
         }
     }
 
@@ -36,17 +44,17 @@ public class NinjaCore {
 
     }
 
-    public ResponseEntity<?> editNinja(Ninja ninja){
-        if(ninja.getId()==0){
+    public ResponseEntity<?> editNinja(NinjaEntity ninjaEntity){
+        if(ninjaEntity.getId()==0){
             return new ResponseEntity<>("Id não encontrado",HttpStatus.NOT_FOUND);
-        } else if (ninja.getName().equals("")) {
+        } else if (ninjaEntity.getName().equals("")) {
             return new ResponseEntity<>("Necessário informar nome", HttpStatus.BAD_REQUEST);
-        } else if ((ninja.getQuantidadeDeChacra() < 0) || (ninja.getQuantidadeDeChacra() > 100)) {
+        } else if ((ninjaEntity.getQuantidadeDeChacra() < 0) || (ninjaEntity.getQuantidadeDeChacra() > 100)) {
             return  new ResponseEntity<>("Valor inválido",  HttpStatus.BAD_REQUEST);
-        } else if ((ninja.getVilage().getId()<0) || (ninja.getVilage().getId()>4)) {
+        } else if ((ninjaEntity.getVilage().getId()<0) || (ninjaEntity.getVilage().getId()>4)) {
             return new ResponseEntity<>("Necessário informar vila", HttpStatus.BAD_REQUEST);
         }else {
-            return new ResponseEntity<>(ninjaRepository.save(ninja), HttpStatus.OK);
+            return new ResponseEntity<>(ninjaRepository.save(ninjaEntity), HttpStatus.OK);
         }
     }
 

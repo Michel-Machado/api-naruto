@@ -1,16 +1,16 @@
 package com.example.naruto.repositories;
 
-import com.example.naruto.entities.Ninja;
+import com.example.naruto.entities.NinjaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface NinjaRepository extends JpaRepository<Ninja, Long> {
+public interface NinjaRepository extends JpaRepository<NinjaEntity, Long> {
 
-    List<Ninja> findAll();
+    List<NinjaEntity> findAll();
 
-   Optional<Ninja> findById(Long id);
+   Optional<NinjaEntity> findById(Long id);
 
    int countById(Long id);
 

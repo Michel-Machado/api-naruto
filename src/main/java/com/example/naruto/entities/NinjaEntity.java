@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tb_ninjaa")
-public class Ninja {
+public class NinjaEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,12 +14,12 @@ public class Ninja {
 
     @ManyToOne
     @JoinColumn(name = "vila_id")
-    private Vila vilage;
+    private VilaEntity vilage;
 
-    public Ninja() {
+    public NinjaEntity() {
     }
 
-    public Ninja(Long id, String name, Integer quantidadeDeChacra, Vila vilage) {
+    public NinjaEntity(Long id, String name, Integer quantidadeDeChacra, VilaEntity vilage) {
         this.id = id;
         this.name = name;
         this.quantidadeDeChacra = quantidadeDeChacra;
@@ -30,7 +30,7 @@ public class Ninja {
         return id;
     }
 
-    public Ninja setId(Long id) {
+    public NinjaEntity setId(Long id) {
         this.id = id;
         return this;
     }
@@ -39,7 +39,7 @@ public class Ninja {
         return name;
     }
 
-    public Ninja setName(String name) {
+    public NinjaEntity setName(String name) {
         this.name = name;
         return this;
     }
@@ -48,16 +48,16 @@ public class Ninja {
         return quantidadeDeChacra;
     }
 
-    public Ninja setQuantidadeDeChacra(Integer quantidadeDeChacra) {
+    public NinjaEntity setQuantidadeDeChacra(Integer quantidadeDeChacra) {
         this.quantidadeDeChacra = quantidadeDeChacra;
         return this;
     }
 
-    public Vila getVilage() {
+    public VilaEntity getVilage() {
         return vilage;
     }
 
-    public Ninja setVilage(Vila vilage) {
+    public NinjaEntity setVilage(VilaEntity vilage) {
         this.vilage = vilage;
         return this;
     }

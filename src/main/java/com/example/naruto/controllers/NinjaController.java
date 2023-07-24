@@ -1,7 +1,9 @@
 package com.example.naruto.controllers;
 
+import com.example.naruto.Dto.NinjaDto;
+import com.example.naruto.adapters.NinjaPortIn;
 import com.example.naruto.core.NinjaCore;
-import com.example.naruto.entities.Ninja;
+import com.example.naruto.entities.NinjaEntity;
 import com.example.naruto.repositories.NinjaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,36 +15,34 @@ import org.springframework.web.bind.annotation.*;
 public class NinjaController {
 
     @Autowired
-    private NinjaRepository ninjaRepository;
-    @Autowired
-    private NinjaCore ninjaCore;
+    private NinjaPortIn ninjaPortIn;
 
     @GetMapping
     public ResponseEntity<?> buscaNinjas(){
-        return ninjaCore.getAllNinjas();
+        return ninjaPortIn.getAllNinjas();
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<?> buscaNinjaPorId(@PathVariable Long id) {
 
-        return ninjaCore.getNinjaById(id);
+        return ninjaPortIn.getNinjaById(id);
     }
 
     @PostMapping
-    public ResponseEntity<?> cadastraNinja(@RequestBody Ninja ninja){
-        return ninjaCore.CreateNinja(ninja);
+    public ResponseEntity<?> cadastraNinja(@RequestBody NinjaDto ninjaDto){
+        return ninjaPortIn.createNinja(ninjaDto);
 
     }
 
     @PutMapping
-    public ResponseEntity<?> atualizaNinja(@RequestBody Ninja ninja){
-        return ninjaCore.editNinja(ninja);
+    public ResponseEntity<?> atualizaNinja(@RequestBody NinjaEntity ninjaEntity){
+        return ninjaPortIn.editNinja(ninjaEntity);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> excluiNinja(@PathVariable Long id) {
 
-        return ninjaCore.deleteNinja(id);
+        return ninjaPortIn.deleteNinja(id);
     }
 
 }
